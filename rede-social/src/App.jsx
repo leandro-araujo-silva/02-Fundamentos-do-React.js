@@ -1,7 +1,10 @@
 import { Header } from './components/Header'
 import {Post} from './Post'
 
+import styles from './App.module.css'
+
 import './global.css'
+import { Sidebar } from './components/Sidebar'
 
 export function App() {
 
@@ -9,10 +12,13 @@ export function App() {
     <div>
       <Header />
 
-      <Post 
-        author="Leandro" 
-        content="Na informática, o jogo online é um tipo de jogo eletrônico jogados via Internet."
-      />
+      <div className={styles.wrapper}>
+        <Sidebar />
+        <main>
+          <Post author="Leandro Araújo" content="Lorem ipsum dolor sit amet consectetur adipisicing elit."/>
+          <Post author="Diego Fernandes" content="Lorem ipsum dolor sit amet consectetur adipisicing elit."/>
+        </main>
+      </div>
     </div>
   )
 }
