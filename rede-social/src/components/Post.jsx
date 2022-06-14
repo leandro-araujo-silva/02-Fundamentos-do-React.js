@@ -1,6 +1,7 @@
 import styles from './Post.module.css'
 
 import usuarioImg from '../assets/jane.svg'
+import { Comment } from './Comment'
 
 export function Post() {
   return (
@@ -38,6 +39,11 @@ export function Post() {
         </footer>
         
       </form>
+
+      <div className={styles.commentList}>
+        <Comment />
+        <Comment />
+      </div>
     </article>
   )
 }
