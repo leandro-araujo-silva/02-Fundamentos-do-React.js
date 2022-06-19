@@ -1,10 +1,24 @@
-import styles from './Post.module.css'
+import { useState } from 'react'
 
-import usuarioImg from '../assets/jane.svg'
 import { Comment } from './Comment'
 import { Avatar } from './Avatar'
 
+import styles from './Post.module.css'
+
+
 export function Post({ author, publishedAt, content }) {
+  const [comments] = useState([
+    1,
+    2,
+    3,
+  ])
+
+  function handleCreateNewComment() {
+    event.preventDefault()
+
+    comments.push(3)
+    console.log(comments)
+  }
   
   return (
     <article className={styles.post}>
@@ -32,7 +46,7 @@ export function Post({ author, publishedAt, content }) {
         }
       </div>
 
-      <form className={styles.commentForm}>
+      <form onSubmit={handleCreateNewComment} className={styles.commentForm}>
         <strong>Deixe seu feedback</strong>
 
         <textarea placeholder="Deixe um comentário"/>
