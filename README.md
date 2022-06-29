@@ -12,7 +12,7 @@
 
 Plataforma que permite adicionar, excluir e curtir comentários.
 
-Link para a visualização do projeto:https://rede-social-psi.vercel.app/
+Link para a visualização do projeto: https://rede-social-psi.vercel.app/
 
 ### 🛠 Tecnologias
 
