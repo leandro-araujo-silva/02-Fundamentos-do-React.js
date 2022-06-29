@@ -10,7 +10,7 @@
 
 ## Sobre o Projeto
 
-Plataforma realizada no Ignite da Rocketseat, que permite adicionar, excluir e curtir comentários.
+Plataforma realizada no Ignite da Rocketseat, que permite adicionar, excluir e curtir comentários. <br>Esse projeto foi realizado primeiramente com Javascript e, posteriormente, com Typescript.
 
 Link para a visualização do projeto: https://rede-social-psi.vercel.app/
 
@@ -18,6 +18,7 @@ Link para a visualização do projeto: https://rede-social-psi.vercel.app/
 
 As seguintes ferramentas foram usadas na construção do projeto:
 
+- [Javascript]
 - [Typescript]
 - [React]
 - [React-Hooks]
