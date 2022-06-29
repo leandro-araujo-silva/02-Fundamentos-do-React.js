@@ -10,7 +10,7 @@
 
 ## Sobre o Projeto
 
-Plataforma que permite adicionar, excluir e curtir comentários.
+Plataforma realizada no Ignite da Rocketseat, que permite adicionar, excluir e curtir comentários.
 
 Link para a visualização do projeto: https://rede-social-psi.vercel.app/
 
