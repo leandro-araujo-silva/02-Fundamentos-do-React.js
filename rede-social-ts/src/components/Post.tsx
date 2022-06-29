@@ -1,4 +1,6 @@
 import { FormEvent, useState, ChangeEvent, InvalidEvent } from 'react'
+import { format, formatDistanceToNow } from 'date-fns'
+import ptBR from 'date-fns/locale/pt-BR'
 
 import { Comment } from './Comment'
 import { Avatar } from './Avatar'
@@ -23,7 +25,16 @@ interface PostProps {
 }
 
 export function Post({ author, publishedAt, content }: PostProps) {
-  const [comments, setComments] = useState(['Post muito bacana, hein?'])
+  const publishedDateFormatted = format(publishedAt, "d 'de' LLLL 'às' HH:mm'h'", {
+    locale: ptBR,
+  })
+
+  const publishedDateRelativeToNow = formatDistanceToNow(publishedAt, {
+    locale: ptBR,
+    addSuffix: true,
+  })
+
+  const [comments, setComments] = useState(['Post muito bacana, hein!'])
 
   const [newCommentText, setNewCommentText] = useState('')
 
@@ -66,7 +77,7 @@ export function Post({ author, publishedAt, content }: PostProps) {
           </div>
         </div>
 
-        <time title='' dateTime='2022-05-11 00:13:30'>Publicado há 1h</time>
+        <time title={publishedDateFormatted} dateTime={publishedAt.toISOString()}>{publishedDateRelativeToNow}</time>
       </header>
 
       <div className={styles.content}>
