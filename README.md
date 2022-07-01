@@ -22,7 +22,6 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - [Typescript]
 - [React]
 - [React-Hooks]
-- [Styled-components]
 - [date-fns]
 - [phosphor-react]
 ---
